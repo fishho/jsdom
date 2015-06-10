@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Shopping list</title>
+	<link rel="stylesheet" type="text/css" href="order.css">
+</head>
+<body>
+	<h1>What to buy</h1>
+	<p title = "a gentle reminder">Don't forget to buy this stuff.</p>
+	<p>This is just a test</p>
+	<ul id="purchases">
+		<li>A tin of beans</li>
+		<li>Cheese</li>
+		<li>Milk</li>
+	</ul>
+	<script type="text/javascript">
+/*	var items = document.getElementsByTagName("li");
+	for (var i = 0;i < items.length;i++){
+		alert(typeof items[i]);
+	}*/
+	var paras = document.getElementsByTagName("p");
+	for (var i = 0; i < paras.length; i++) {
+		var title_text = paras[i].getAttribute("title");
+		/*if (title_text != null)*/ 
+		if (title_text){
+			alert(title_text);
+		};
+	};
+	var shopping = document.getElementById("purchases");
+	alert(shopping.getAttribute("title"));
+	shopping.setAttribute("title","a list of goods");
+	alert(shopping.getAttribute("title"));
+	</script>
+</body>
+</html>

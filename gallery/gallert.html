@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Image Gallery</title>
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+	<script type="text/javascript" src= "showPic.js"></script>
+</head>
+<body>
+	<h1>Snapshots</h1>
+	
+	<div>
+		<ul>
+			<li>
+				<a href="images/大地惊雷.jpg" onclick="showPic(this);return false;" title ="大地惊雷">Poster</a>
+			</li>
+			<li>
+				<a href="images/大地惊雷1.jpg" title="大地惊雷1">Poster1</a>
+			</li>
+			<li>
+				<a href="images/大地惊雷2.jpg" title="大地惊雷2">Poster2</a>
+			</li>
+			<li>
+				<a href="images/大地惊雷3.jpg" title="大地惊雷3">Poster3</a>
+			</li>	
+		</ul>
+	</div>
+	<div>
+		<img id="placeholder" src="" alt="my image gallery" />
+	</div>
+	<p id="description">Choose an image.</p>
+</body>
+</html>
